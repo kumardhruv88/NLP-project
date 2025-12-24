@@ -1,89 +1,136 @@
-📊 Sentiment Analysis on Amazon Alexa Reviews
+# 📊 Sentiment Analysis on Amazon Alexa Reviews
 
-An end-to-end NLP mini project that performs sentiment analysis on Amazon Alexa product reviews using classical machine learning techniques.
-The project covers data collection, exploratory data analysis (EDA), feature engineering, model comparison, hyperparameter tuning, and deployment with Flask on Render.
+An **end-to-end NLP mini project** that performs **sentiment analysis** on Amazon Alexa product reviews using classical machine learning techniques.  
+The project covers **data collection, exploratory data analysis (EDA), feature engineering, model comparison, hyperparameter tuning**, and **deployment using Flask on Render**.
 
-🔗 Live Demo: (https://nlp-project-cyng.onrender.com/)
+🔗 **Live Demo**: *(Add your Render deployment link here)*
 
-🚀 Project Overview
+---
 
-Customer reviews contain valuable insights into user satisfaction and product quality.
-This project builds a binary sentiment classifier to predict whether a review expresses positive or negative sentiment.
+## 🚀 Project Overview
 
-Key Highlights
+Customer reviews contain valuable insights into user satisfaction and product quality.  
+This project builds a **binary sentiment classification system** to predict whether a review expresses **positive or negative sentiment**.
 
-Real-world dataset from Kaggle
-Strong focus on EDA and visualization
-Comparison of multiple ML models
-Best model selection using GridSearchCV
-Deployed as a Flask web application
-Hosted on Render
+### Key Highlights
+- Real-world dataset sourced from Kaggle
+- Strong emphasis on **EDA and data visualization**
+- Multiple ML models implemented and compared
+- Best model selected using **GridSearchCV**
+- Simple **Flask-based web UI**
+- Successfully deployed on **Render**
 
-🗂 Dataset
+---
 
-Source: Kaggle – Amazon Alexa Reviews Dataset
-Format: .tsv
-Features include: 
-Review text
-Rating
-Feedback label
+## 🗂 Dataset
 
-Data Preprocessing
+- **Source**: Kaggle – Amazon Alexa Reviews Dataset  
+- **Format**: `.tsv`
+- **Data includes**:
+  - Review text
+  - Ratings
+  - Feedback labels
 
-Text cleaning & normalization
-Stopword removal
-Feature extraction using vectorization
-Handling missing values
+### Data Preprocessing
+- Text cleaning and normalization
+- Stopword removal
+- Feature extraction using vectorization
+- Handling missing values
 
-🛠 Tech Stack
-🔹 Programming Language:python
-🔹 Data Analysis & Visualization :Numpy,Pandas,Seaborn,Matplotlib
-🔹 NLP & Machine Learning:Scikit-learn ,XGBoost,Random Forest,Decision Tree
-🔹 Model Optimization: GridSearchCV (Hyperparameter tuning)
-🔹 Experimentation :Jupyter Notebook (EDA & model experimentation)
-🔹 Web Development:Flask (Backend),HTML & CSS (Frontend)
-🔹 Deployment:Render,Gunicorn (WSGI server)
+---
 
-📈 Exploratory Data Analysis (EDA)
-EDA was performed to understand:
-Distribution of sentiments
+## 🛠 Tech Stack
 
-Relationship between ratings and sentiment
-Review length patterns
-Feature importance indicators
+### Programming Language
+- Python
+
+### Data Analysis & Visualization
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+
+### NLP & Machine Learning
+- Scikit-learn
+- XGBoost
+- Random Forest
+- Decision Tree
+
+### Model Optimization
+- GridSearchCV (Hyperparameter tuning)
+
+### Development & Experimentation
+- Jupyter Notebook
+
+### Web Development
+- Flask (Backend)
+- HTML & CSS (Frontend)
+
+### Deployment
+- Render
+- Gunicorn
+
+---
+
+## 📈 Exploratory Data Analysis (EDA)
+
+EDA was performed to:
+- Analyze sentiment distribution
+- Study rating vs sentiment relationship
+- Understand review length patterns
+- Identify important features influencing sentiment
+
 Visualizations helped in:
-Identifying class imbalance
-Choosing suitable algorithms
-Improving model performance
+- Detecting class imbalance
+- Improving feature selection
+- Choosing appropriate models
 
-🤖 Models Implemented
+---
+
+## 🤖 Models Implemented
 
 The following machine learning models were trained and evaluated:
 
-Model	Description
-Decision Tree	Baseline classifier
-Random Forest	Ensemble-based approach
-XGBoost	Gradient boosting model
-✅ Best Performing Model
+| Model | Description |
+|------|------------|
+| Decision Tree | Baseline classifier |
+| Random Forest | Ensemble learning approach |
+| XGBoost | Gradient boosting model |
 
-XGBoost Achieved the highest accuracy..Tuned using GridSearchCV for optimal hyperparameters
+### ✅ Best Performing Model
+- **XGBoost**
+- Achieved the **highest accuracy**
+- Tuned using **GridSearchCV** to obtain optimal hyperparameters
 
-⚙️ Hyperparameter Tuning
+---
 
-Used GridSearchCV,Tuned parameters such as:
-Number of estimators
-Max depth
-Learning rate
-Improved generalization and reduced overfitting
+## ⚙️ Hyperparameter Tuning
 
-🌐 Web Application
-A simple and clean web interface where users can:Enter a product review..Get real-time sentiment prediction (Positive / Negative)
-Tech Used
-Flask for routing and inference
-HTML & CSS for UI
-Pre-trained XGBoost model loaded using .pkl
+- Used **GridSearchCV**
+- Tuned parameters such as:
+  - Number of estimators
+  - Maximum depth
+  - Learning rate
+- Improved generalization and reduced overfitting
 
-🧩 Project Structure
+---
+
+## 🌐 Web Application
+
+A simple and user-friendly web interface where users can:
+- Enter a product review
+- Get instant sentiment prediction (**Positive / Negative**)
+
+### Tech Used
+- Flask for backend routing and inference
+- HTML & CSS for frontend
+- Trained XGBoost model loaded using `.pkl` files
+
+---
+
+## 🧩 Project Structure
+
+```bash
 sentiment-analysis/
 │
 ├── Data/
@@ -107,28 +154,3 @@ sentiment-analysis/
 ├── Procfile
 ├── runtime.txt
 └── README.md
-
-🚀 Deployment
-The application is deployed on Render.Uses Gunicorn as the production WSGI server.Automatically redeploys on GitHub push
-
-📊 Results & Insights
-
-XGBoost outperformed other models
-Hyperparameter tuning significantly improved accuracy
-The deployed model provides fast and reliable predictions
-
-🎯 Learning Outcomes
-
-End-to-end NLP project implementation
-Hands-on EDA for text data
-Model comparison and selection
-Hyperparameter tuning using GridSearchCV
-Deploying ML models with Flask and Render
-Writing production-ready ML code
-
-🔮 Future Improvements
-Use deep learning models (LSTM / Transformers)
-Add confidence score to predictions
-Deploy using Docker
-Improve UI/UX
-Extend to multi-class sentiment analysis

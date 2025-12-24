@@ -5,6 +5,6 @@ scikit-learn
 wordcloud
 nltk
 xgboost
-streamlit
+gunicorn
 flask
 matplotlib

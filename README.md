@@ -3,7 +3,7 @@
 An **end-to-end NLP mini project** that performs **sentiment analysis** on Amazon Alexa product reviews using classical machine learning techniques.  
 The project covers **data collection, exploratory data analysis (EDA), feature engineering, model comparison, hyperparameter tuning**, and **deployment using Flask on Render**.
 
-🔗 **Live Demo**: *(Add your Render deployment link here)*
+🔗 **Live Demo**: *(https://nlp-project-1a6s.onrender.com)*
 
 ---
 
